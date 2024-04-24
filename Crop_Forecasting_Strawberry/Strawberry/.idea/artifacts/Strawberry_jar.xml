@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Strawberry:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Strawberry_jar</output-path>
+    <root id="archive" name="Strawberry.jar">
+      <element id="module-output" name="Strawberry" />
+    </root>
+  </artifact>
+</component>

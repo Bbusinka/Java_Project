@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+    <children>
+        <AnchorPane prefHeight="107.0" prefWidth="700.0" style="-fx-background-color: #2e7d32; -fx-border-color: #005005;">
+            <children>
+                <Label layoutX="123.0" layoutY="14.0" text="Розумна змійка " textFill="WHITE">
+                    <font>
+                        <Font name="Comic Sans MS" size="56.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="212.0" fitWidth="280.0" layoutX="406.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/pngwing.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="button_vidpovid" layoutX="185.0" layoutY="293.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="193.0" style="-fx-background-color: #2e7d32; -fx-border-color: #005005;" text="Відповісти" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="text_spich2" layoutX="459.0" layoutY="209.0" prefHeight="107.0" prefWidth="209.0" text="Щоб зіграти дай відповідь на моє запитання" wrapText="true">
+            <font>
+                <Font name="Comic Sans MS" size="11.0" />
+            </font>
+        </Label>
+        <Button fx:id="button_snecs2" layoutX="281.0" layoutY="340.0" mnemonicParsing="false" prefHeight="138.0" prefWidth="150.0" style="-fx-background-color: #ffffff;">
+            <graphic>
+                <ImageView fitHeight="138.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image preserveRatio="false" smooth="false" url="@../resources/snace.jpg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <MenuBar layoutY="107.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="           Рівень складності          ">
+            <items>
+              <MenuItem fx:id="menu_riv1" mnemonicParsing="false" text="Легко(Рекомендовано для дітей від 5 до 8 років)" />
+                  <MenuItem fx:id="menu_riv2" mnemonicParsing="false" text="Середня складності(Рекомендовано для дітей від 9 до 12 років)" />
+                  <MenuItem fx:id="menu_riv3" mnemonicParsing="false" text="Важко(Рекомендовано для дітей від 12 і більше років)" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="       Cервісні можливості гри        ">
+               <items>
+                  <MenuItem fx:id="menu_bek" mnemonicParsing="false" text="Змінити користувача" />
+                  <MenuItem fx:id="menu_rez" mnemonicParsing="false" text="Переглянути результати" />
+
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="   Додаткова інформація   ">
+               <items>
+                  <MenuItem fx:id="menu_avtor" mnemonicParsing="false" text="Автор" />
+                  <MenuItem fx:id="menu_pravela" mnemonicParsing="false" text="Правила гри" />
+                  <MenuItem fx:id="menu_game" mnemonicParsing="false" text="Управління" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="             Вихід              ">
+               <items>
+                  <MenuItem fx:id="menu_close" mnemonicParsing="false" text="Так" />
+                  <MenuItem mnemonicParsing="false" text="Ні" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <RadioButton fx:id="chek_DA" layoutX="145.0" layoutY="242.0" mnemonicParsing="false" text="Так">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="chek_NE" layoutX="378.0" layoutY="242.0" mnemonicParsing="false" text="Ні" toggleGroup="$Group">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="text_vopros" layoutX="65.0" layoutY="168.0" text="Label">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="text_login" layoutX="14.0" layoutY="132.0" text="Label">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>

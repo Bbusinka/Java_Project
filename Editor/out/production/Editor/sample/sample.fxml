@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutY="1.0" prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #524f48;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu fx:id="figury" mnemonicParsing="false" text="Figury">
+                  <items>
+                    <MenuItem fx:id="kolo" mnemonicParsing="false" text="Koło" />
+                        <MenuItem fx:id="trojkat" mnemonicParsing="false" text="Trójkąt" />
+                        <MenuItem fx:id="prostokat" mnemonicParsing="false" text="Prostokąt" />
+                  </items>
+                </Menu>
+                <Menu fx:id="pomoc" mnemonicParsing="false" text="Pomoc">
+                  <items>
+                    <MenuItem fx:id="programa" mnemonicParsing="false" text="O programie" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ColorPicker fx:id="color" layoutX="151.0" prefHeight="32.0" prefWidth="125.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="canva" layoutY="26.0" prefHeight="374.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0" />
+   </children>
+</AnchorPane>

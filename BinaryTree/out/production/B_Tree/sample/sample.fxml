@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="whiteGhost" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="1380.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="valField" alignment="CENTER" layoutX="1126.0" layoutY="5.0" prefHeight="25.0" prefWidth="72.0" promptText="Value" />
+      <Text fx:id="status" fill="#fcf9f9" layoutX="375.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="139.0" />
+      <Group layoutX="301.0" layoutY="342.0" />
+      <Separator layoutY="36.0" prefHeight="0.8" prefWidth="1365.0" />
+      <TextArea fx:id="textArea" layoutX="7.0" layoutY="573.0" prefHeight="6.0" prefWidth="1366.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <Button fx:id="insertButton" layoutX="994.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Insert" />
+      <Button fx:id="buildButton" layoutX="514.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Build">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchButton" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Search" />
+      <Button fx:id="clearButton" layoutX="787.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Clear Tree!">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="preOrderButton" layoutX="145.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="PreOrder" />
+      <Button fx:id="inOrderButton" layoutX="272.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="InOrder" />
+      <Button fx:id="postOrderButton" layoutX="404.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="PostOrder" />
+      <MenuButton layoutX="1223.0" layoutY="5.0" mnemonicParsing="false" text="Тип данных">
+        <items>
+          <MenuItem fx:id="settypeint" mnemonicParsing="false" text="Integer" />
+          <MenuItem fx:id="settypedou" mnemonicParsing="false" text="Double" />
+            <MenuItem fx:id="settypestr" mnemonicParsing="false" text="String" />
+        </items>
+      </MenuButton>
+   </children>
+</Pane>
